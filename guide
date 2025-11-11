@@ -1,0 +1,72 @@
+**Steps to Setup and Run MERN App on Ubuntu and Windows**
+
+## **🔹 Steps for Ubuntu**
+### **1️⃣ Copy the ZIP file to your machine**
+
+### **2️⃣ Extract the ZIP file**
+Navigate to the directory and extract the ZIP file:
+
+After extraction, you should see:
+```
+QR-based-attendance-in-MERN/
+  ├── qr-backend/
+  ├── qr-frontend/
+  ├── Ubuntu_run.sh
+  ├── README.md
+  ├── win_run.bat
+```
+
+### **3️⃣ Give execution permission to `app.sh`**
+Before running the script, ensure it has execution permissions:
+```bash
+cd QR-based-attendance-in-MERN
+chmod +x app.sh
+```
+
+### **4️⃣ Run the script**
+Start the MERN app:
+```bash
+./app.sh
+```
+
+💡 **What happens?**
+- Installs dependencies (`npm install`) for **backend** and **frontend**.
+- Starts **backend** and **frontend** in separate terminal windows.
+
+---
+
+## **🔹 Steps for Windows**
+### **1️⃣ Copy the ZIP file**
+If the ZIP file is on an external drive:
+1. Open **File Explorer**.
+2. Copy `QR-based-attendance-in-MERN.zip` to `C:\Users\YourUsername\Documents\`.
+
+### **2️⃣ Extract the ZIP file**
+1. Right-click on `QR-based-attendance-in-MERN.zip`.
+2. Select **Extract All…** and choose `C:\Users\YourUsername\Documents\`.
+
+After extraction, you should see:
+```
+C:\Users\YourUsername\Documents\QR-based-attendance-in-MERN\
+  ├── qr-backend\
+  ├── qr-frontend\
+  ├── win_run.bat
+  ├── README.md
+  ├── Ubuntu_run.sh
+```
+
+### **3️⃣ Run the `app.bat` file**
+1. **Double-click** `app.bat` inside `QR-based-attendance-in-MERN`.
+2. If prompted, **allow it to run**.
+3. Two **Command Prompt** windows will open:
+   - One for the **backend** (`npm run dev`).
+   - One for the **frontend** (`npm run dev`).
+
+✅ **Now your MERN app is running!** Open your browser and visit:
+- **Frontend:** `http://localhost:3000`
+- **Backend:** `http://localhost:5000` (or your backend's configured port)
+
+---
+🚀 **Now your MERN app is up and running on both Ubuntu and Windows!**
+
+
